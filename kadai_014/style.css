@@ -1,0 +1,29 @@
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: "Arial", "Meiryo", sans-serif;
+  /* 中央揃えにする */
+  text-align: center;
+}
+.google-fonts {
+  font: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  /* 文字の間隔を1.2倍にする */
+  letter-spacing: 1.2em;
+  /* ①影の右方向の長さ②影の下方向の長さ③影のぼけ具合④影の色 */
+  text-shadow:1px 1px 2px gray;
+  /* borderプロパティの値にsolidを指定すると、実線になります */
+  border-bottom: solid 3px rgb(115, 115, 114);
+}
+.text-skyblue {
+  color: skyblue;
+}
+.text-pink {
+  color: rgb(255, 192, 203);
+}
+/* p部分だけ変更 */
+#basic p {
+  font-weight: bold;
+}
