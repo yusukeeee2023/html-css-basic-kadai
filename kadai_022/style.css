@@ -1,0 +1,85 @@
+header {
+  margin-bottom: 20px;
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+
+h1 {
+  margin: 0px;
+  /* 文字色 */
+  color: rgb(255, 255, 255);
+}
+p {
+  margin: 0px;
+  font-size: 20px;
+}
+body {
+  margin: 0;
+}
+a {
+  font-size: 20px;
+}
+main {
+  margin: 10px;
+}
+#parent {
+  display: flex;
+  /* 一番左と一番右のアイテムも含め、均等な間隔で配置する」値を設定 */
+  justify-content: space-around;
+}
+.contents {
+  /* 実線、太さ3px、色指定 */
+  border: solid 3px rgb(238, 204, 204);
+  flex-basis: 25%;
+  padding: 10px 15px;
+  margin: 15px 0;
+  text-align: center
+}
+h2 {
+  font-size: 25px;
+  /* 点線、太さ3px、色指定 */
+  border-bottom: dotted 3px rgb(236, 122, 122);
+}
+/* h2の前に●を付け加える */
+h2::before {
+  content: "⚫️";
+  color: rgb(239, 111, 139);
+}
+/* 2番目のp要素の最初の文字を指定 */
+.contents p:nth-of-type(2)::first-letter  {
+  /* 太字 */
+  font-weight: bold;
+  color: rgb(97, 206, 249);
+}
+img {
+  margin: 10px 0;
+  width: 70%;
+}
+footer {
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+a {
+  color: rgb(255, 255, 255);
+}
+/* 訪問済みのサイトの色が変化 */
+a:visited {
+  color: rgb(193, 234, 251);
+}
+/* マウスカーソルが乗ると色が変化 */
+a:hover {
+  color: rgb(245, 178, 168);
+}
+/* 画面幅が768px以下のとき */
+@media screen and (max-width: 768px) {
+h2 {
+  font-size: 30px;
+}
+p {
+  font-size: 25px;
+}
+#parent {
+  /* 要素が縦に並ぶ */
+  flex-direction: column;
+}
+}
